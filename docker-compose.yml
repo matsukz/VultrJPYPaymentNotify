@@ -1,0 +1,11 @@
+version: "3"
+services:
+  python3:
+    container_name: VJP_Python3
+    build: .
+    volumes:
+      - ./src:/src
+    working_dir: /src
+    command: python3 main.py
+    environment:
+      - TZ=Asia/Tokyo
